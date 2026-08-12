@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="hamburger">
+        <input class="checkbox" type="checkbox" id="menu-toggle" />
+        <svg fill="none" viewBox="0 0 50 50" height="50" width="50">
+            <path class="lineTop line" stroke-linecap="round" stroke-width="4" stroke="black" d="M6 11L44 11"></path>
+            <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 24H43" class="lineMid line"></path>
+            <path stroke-linecap="round" stroke-width="4" stroke="black" d="M6 37H43" class="lineBottom line"></path>
+        </svg>
+    </div>
+
+    <!-- MENÚ LATERAL -->
+    <nav class="navbar" id="sidebar">
+        <ul class="nav-menu">
+            <li><button id="btn-home">HOME</button></li>
+            <li><button id="btn-articulos">ARTICULOS</button></li>
+            <li><button id="btn-ultimate">ULTIMATE</button></li>
+            <li><button>HAS TU PEDIDO</button></li>
+        </ul>
+    </nav>
+
+    <!-- TEXTO DE CONTEXTO -->
+    <p class="context-text">
+        AURA redefine la tecnología móvil de alta gama. 
+        Somos una plataforma exclusiva dedicada a la selección 
+        de dispositivos de vanguardia, donde la innovación, 
+        el rendimiento y un diseño sofisticado se encuentran 
+        para ofrecerte una experiencia digital sin precedentes.
+    </p>
+
+    <!-- CONTENIDO CENTRAL -->
+    <div class="hero-content">
+        <h1 class="hero-title">AURA</h1>
+        
+        <div class="input-container">
+            <input type="text" name="text" class="input" placeholder="search...">
+            <span class="icon"> 
+                <svg width="19px" height="19px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 5H20" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M14 8H17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M22 22L20 20" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </span>
+        </div>
+
+        <!-- SECCIÓN PRODUCTOS (ARTICULOS) -->
+        <div class="product-container" id="product-section">
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://espanol.spectrum.com/24/_mp.v3TkJtd0JCZnRuNlN5aWVGNTB1eTdBZmJ0Yjd0WkZwLVloTzM2UkpaT1V0ZU45MlpMdi1udUJqYm9GQXJ6UHBta2w._mp.ve/_res_cloudinary_com/spectrumobile/image/upload/Spectrum%20Mobile/Samsung/S26%20Ultra/Galaxy-S26-Ultra-Black-512GB-HERO.png" alt="Galaxy S26 Ultra" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Galaxy S26 Ultra</h2>
+                    <ul>
+                        <li>Cámara: 200 MP de alta resolución</li>
+                        <li>Característica: Lápiz óptico S Pen integrado</li>
+                        <li>Rendimiento: Máxima potencia en procesamiento</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $1,299</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://comprasmartphone.com/_next/image?url=https%3A%2F%2Fstorage.comprasmartphone.com%2Fsmartphones%2Fsamsung-galaxy-z-fold8-ultra.png&w=3840&q=75" alt="Galaxy Z Fold8 / Fold7" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Galaxy Z Fold8 / Fold7</h2>
+                    <ul>
+                        <li>Diseño: Pantalla premium flexible</li>
+                        <li>Formato: Se abre horizontalmente</li>
+                        <li>Uso: Funciona como tablet compacta</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $1,799</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-17-pro-17-pro-max-hero.png" alt="iPhone 17 Pro Max" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>iPhone 17 Pro Max</h2>
+                    <ul>
+                        <li>Pantalla: 6.9 pulgadas</li>
+                        <li>Diseño: Chasis unibody rediseñado</li>
+                        <li>Tecnología: Avanzadas herramientas de Apple Intelligence</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $1,199</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://re.now/cdn/shop/files/OPM-3146_Apple_iPhone17Pro_orange_image1_ceccfc65-4cf2-46bb-9dd6-877bb5547c65.png?v=1760625389" alt="iPhone 17 Pro" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>iPhone 17 Pro</h2>
+                    <ul>
+                        <li>Versión: Premium compacta</li>
+                        <li>Procesador: Chip A19 Pro</li>
+                        <li>Cámaras: Idéntico rendimiento gráfico y sistema Pro Fusion</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $999</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://ss7.vzw.com/is/image/VerizonWireless/google-pixel-10-pro-xl-obsidian-ga09367-us-ga09915-us-a?wid=400&hei=400&fmt=webp-alpha" alt="Pixel 10 Pro XL" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Pixel 10 Pro XL</h2>
+                    <ul>
+                        <li>Software: Experiencia de Android totalmente limpia</li>
+                        <li>Inteligencia: Procesamiento fotográfico optimizado por IA</li>
+                        <li>Categoría: Dispositivo insignia avanzado</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $1,099</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/Google/Google-Pixel-10-Pro-XL/Moonstone/Google-Pixel-10-Pro-XL-Moonstone-rightimage.png" alt="Pixel 10 Pro" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Pixel 10 Pro</h2>
+                    <ul>
+                        <li>Cámaras: Mismas capacidades fotográficas excepcionales</li>
+                        <li>Rendimiento: Chip Tensor más reciente</li>
+                        <li>Diseño: Formato más pequeño y portable</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $949</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://i02.appmifile.com/191_item_au/28/02/2026/e792f811e2e01bb71f118d9f4735fa2e.png?thumb=1&q=85" alt="Xiaomi 17 Ultra / 16 Ultra" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Xiaomi 17 Ultra / 16 Ultra</h2>
+                    <ul>
+                        <li>Categoría: Teléfono insignia definitivo</li>
+                        <li>Enfoque: Fotografía profesional</li>
+                        <li>Óptica: Colaboración exclusiva con la marca Leica</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $1,199</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://i02.appmifile.com/954_item_co/24/03/2026/77846d11ac9acc6d86605d2fa9550033.png?thumb=1&q=85" alt="Xiaomi 17 / 16 Pro" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Xiaomi 17 / 16 Pro</h2>
+                    <ul>
+                        <li>Carga: Sistema de carga ultra rápida</li>
+                        <li>Pantalla: Panel de alta resolución</li>
+                        <li>Rendimiento: Gráfico sobresaliente de primer nivel</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $899</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECCIÓN NOTICIAS ULTIMATE -->
+        <div class="news-container" id="ultimate-section">
+
+            <article class="news-card news-featured">
+                <div class="news-badge">LANZAMIENTO</div>
+                <h3>Samsung Galaxy S26 Ultra oficial: 200 MP + S Pen y Galaxy AI 2.0</h3>
+                <p class="news-date">12 de agosto de 2026</p>
+                <p class="news-excerpt">Samsung presentó oficialmente el Galaxy S26 Ultra con sensor principal de 200 MP, S Pen integrado de nueva generación y la segunda generación de Galaxy AI, que incluye edición generativa en tiempo real y traducción simultánea offline. Llegará a México a partir del 5 de septiembre.</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-badge">APPLE</div>
+                <h3>iPhone 17 Pro Max: chasis unibody de titanio y chip A19 Pro</h3>
+                <p class="news-date">8 de agosto de 2026</p>
+                <p class="news-excerpt">Apple reveló el iPhone 17 Pro Max con un nuevo diseño unibody, pantalla de 6.9", batería de mayor capacidad y el procesador A19 Pro fabricado en 2 nm. Apple Intelligence se potencia con funciones multimodales avanzadas.</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-badge">GOOGLE</div>
+                <h3>Pixel 10 Pro XL: Tensor G5 y cámara con IA proactiva</h3>
+                <p class="news-date">5 de agosto de 2026</p>
+                <p class="news-excerpt">Google lanzó la serie Pixel 10. El modelo Pro XL incorpora el Tensor G5, zoom óptico 10x mejorado y la función “Magic Editor” que ahora sugiere ediciones automáticas según el contexto de la foto.</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-badge">XIAOMI</div>
+                <h3>Xiaomi 17 Ultra: óptica Leica de tercera generación</h3>
+                <p class="news-date">2 de agosto de 2026</p>
+                <p class="news-excerpt">Xiaomi y Leica presentaron el 17 Ultra con sistema de cámaras de 50 MP + 200 MP periscopio y un nuevo modo “Master Raw” pensado para fotógrafos profesionales. Carga hiper-rápida de 120 W.</p>
+            </article>
+
+            <article class="news-card">
+                <div class="news-badge">INDUSTRIA</div>
+                <h3>Qualcomm Snapdragon 8 Elite Gen 2: el nuevo rey del rendimiento</h3>
+                <p class="news-date">28 de julio de 2026</p>
+                <p class="news-excerpt">Qualcomm anunció el Snapdragon 8 Elite Gen 2, fabricado en proceso de 2 nm. Promete un 35 % más de rendimiento en CPU y un 40 % de mejora en eficiencia energética. Los primeros dispositivos llegarán en el último trimestre de 2026.</p>
+            </article>
+
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
