@@ -26,7 +26,7 @@
             <li><button id="btn-home">HOME</button></li>
             <li><button id="btn-articulos">ARTICULOS</button></li>
             <li><button id="btn-ultimate">ULTIMATE</button></li>
-            <li><button>HAS TU PEDIDO</button></li>
+            <li><button id="btn-pedido">HAS TU PEDIDO</button></li>
         </ul>
     </nav>
 
@@ -58,6 +58,7 @@
         <!-- SECCIÓN PRODUCTOS (ARTICULOS) -->
         <div class="product-container" id="product-section">
 
+            <!-- TELÉFONOS -->
             <div class="product-item">
                 <div class="card shadow">
                     <img src="https://espanol.spectrum.com/24/_mp.v3TkJtd0JCZnRuNlN5aWVGNTB1eTdBZmJ0Yjd0WkZwLVloTzM2UkpaT1V0ZU45MlpMdi1udUJqYm9GQXJ6UHBta2w._mp.ve/_res_cloudinary_com/spectrumobile/image/upload/Spectrum%20Mobile/Samsung/S26%20Ultra/Galaxy-S26-Ultra-Black-512GB-HERO.png" alt="Galaxy S26 Ultra" class="product-img">
@@ -202,11 +203,84 @@
                 </div>
             </div>
 
+            <!-- LAPTOPS -->
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111838_macbook-pro-2023-16in.png" alt="MacBook Pro 16" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>MacBook Pro 16"</h2>
+                    <ul>
+                        <li>Chip: M5 Max con hasta 40 núcleos de GPU</li>
+                        <li>Pantalla: Liquid Retina XDR de 16.2"</li>
+                        <li>Memoria: Hasta 128 GB de memoria unificada</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $3,499</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://cdn.mos.cms.futurecdn.net/qaYT8Eo6q8UtPqhKBWii8i-1200-80.png" alt="Dell XPS 16" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Dell XPS 16</h2>
+                    <ul>
+                        <li>Procesador: Intel Core Ultra 9 Serie 2</li>
+                        <li>Pantalla: OLED 4K táctil de 16.3"</li>
+                        <li>Diseño: Chasis de aluminio CNC premium</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $2,699</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://dlcdnwebimgs.asus.com/gain/8C20B181-36B3-474A-B355-1BA238619799" alt="ASUS ROG Zephyrus G16" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>ASUS ROG Zephyrus G16</h2>
+                    <ul>
+                        <li>GPU: NVIDIA GeForce RTX 5090 Laptop</li>
+                        <li>Pantalla: ROG Nebula HDR 240Hz</li>
+                        <li>Diseño: Ultra delgado para gaming extremo</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $3,199</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="card shadow">
+                    <img src="https://p1-ofp.static.pub//fes/cms/2024/09/12/q6fb2891avf5ok5et6ppuhuuilu0cq939626.png" alt="Lenovo Legion Pro 7i" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h2>Lenovo Legion Pro 7i</h2>
+                    <ul>
+                        <li>Procesador: Intel Core Ultra 9 285HX</li>
+                        <li>GPU: NVIDIA RTX 5080 / 5090</li>
+                        <li>Sistema de refrigeración: Legion Coldfront 5.0</li>
+                    </ul>
+                    <div class="price-action">
+                        <p class="price">Precio: $2,899</p>
+                        <button class="buy-btn">COMPRAR <i class="fa fa-credit-card" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- SECCIÓN NOTICIAS ULTIMATE -->
         <div class="news-container" id="ultimate-section">
-
+            <!-- (contenido de noticias sin cambios) -->
             <article class="news-card news-featured">
                 <div class="news-badge">LANZAMIENTO</div>
                 <h3>Samsung Galaxy S26 Ultra oficial: 200 MP + S Pen y Galaxy AI 2.0</h3>
@@ -241,8 +315,62 @@
                 <p class="news-date">28 de julio de 2026</p>
                 <p class="news-excerpt">Qualcomm anunció el Snapdragon 8 Elite Gen 2, fabricado en proceso de 2 nm. Promete un 35 % más de rendimiento en CPU y un 40 % de mejora en eficiencia energética. Los primeros dispositivos llegarán en el último trimestre de 2026.</p>
             </article>
-
         </div>
+
+        <!-- ===================== SECCIÓN HAS TU PEDIDO ===================== -->
+        <div class="pedido-container" id="pedido-section">
+            <div class="pedido-layout">
+                <!-- Imagen del producto -->
+                <!-- Imagen del producto -->
+                <div class="pedido-image-box">
+                    <img id="pedido-img" src="" alt="" class="pedido-img" style="display: none;">
+                    
+                    <!-- Placeholder cuando no hay producto seleccionado -->
+                    <div id="pedido-placeholder" class="pedido-placeholder">
+                        <svg class="placeholder-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m3 16 5-7 6 6.5m6.5 2.5L16 13l-4.286 6M14 10h.01M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z"/>
+                        </svg>
+                        <p>Selecciona un producto</p>
+                    </div>
+                </div>
+
+                <!-- Detalles del producto -->
+                <div class="pedido-info">
+                    <h1 id="pedido-title" class="pedido-title">Selecciona un producto</h1>
+
+                    <div class="pedido-meta">
+                        <p id="pedido-price" class="pedido-price">—</p>
+                        <div class="pedido-rating">
+                            <div class="stars">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span>(5.0)</span>
+                            <a href="#">128 Reseñas</a>
+                        </div>
+                    </div>
+
+                    <div class="pedido-actions">
+                        <button class="pedido-btn secondary">
+                            <i class="fa fa-heart"></i> Añadir a favoritos
+                        </button>
+                        <button class="pedido-btn primary">
+                            <i class="fa fa-shopping-cart"></i> Añadir al carrito
+                        </button>
+                    </div>
+
+                    <hr class="pedido-divider">
+
+                    <div id="pedido-features" class="pedido-features">
+                        <p>Haz clic en el botón <strong>COMPRAR</strong> de cualquier producto en ARTÍCULOS para ver aquí el detalle de tu pedido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="/js/script.js"></script>
