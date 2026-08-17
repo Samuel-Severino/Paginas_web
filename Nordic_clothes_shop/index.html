@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nørdic — Clothes Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating iOS-style nav -->
+  <nav class="floating-nav">
+    <div class="cc-ios-tabs">
+      <input class="cc-ios-tabs__input" type="radio" name="cc-ios-tabs" id="cc-tab-home" checked />
+      <input class="cc-ios-tabs__input" type="radio" name="cc-ios-tabs" id="cc-tab-shop" />
+
+      <div class="cc-ios-tabs__control">
+        <div class="cc-ios-tabs__thumb"></div>
+        <label class="cc-ios-tabs__item" for="cc-tab-home">Home</label>
+        <label class="cc-ios-tabs__item" for="cc-tab-shop">Shop</label>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Home -->
+  <main class="hero" id="view-home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">Nørdic</h1>
+      <p class="hero__subtitle">Minimal clothing for the modern north</p>
+      <p class="hero__description">
+        Prendas atemporales de corte limpio, tejidos naturales y una estética
+        nórdica. Diseñamos ropa esencial para quienes valoran la calidad,
+        la simplicidad y el silencio visual.
+      </p>
+    </div>
+  </main>
+
+  <!-- Shop -->
+  <section class="shop" id="view-shop" hidden>
+    <div class="shop__overlay"></div>
+    <div class="shop__content">
+      <h1 class="shop__title">SHOP</h1>
+
+      <div class="group">
+        <input required type="text" class="input" id="shop-search" autocomplete="off" />
+        <span class="highlight"></span>
+        <span class="bar"></span>
+        <label for="shop-search">Search</label>
+      </div>
+
+      <!-- Brands nav -->
+      <div class="brands">
+        <span class="brands__label">Marcas</span>
+        <nav class="brands-nav" aria-label="Marcas">
+          <button type="button" class="brands-nav__item is-active" data-brand="all">All</button>
+          <button type="button" class="brands-nav__item" data-brand="nike">Nike</button>
+          <button type="button" class="brands-nav__item" data-brand="adidas">Adidas</button>
+          <button type="button" class="brands-nav__item" data-brand="puma">Puma</button>
+          <button type="button" class="brands-nav__item" data-brand="zara">Zara</button>
+          <button type="button" class="brands-nav__item" data-brand="uniqlo">Uniqlo</button>
+          <button type="button" class="brands-nav__item" data-brand="hm">H&amp;M</button>
+        </nav>
+      </div>
+
+      <!-- Product cards -->
+      <div class="products">
+        <article class="product-card" data-brand="nike">
+          <div class="product-card__image">
+            <img src="https://static.nike.com/a/images/t_default/ad59c742-aa0b-4961-a914-83bffc6367b0/M+NK+DF+READY+SS.png" alt="Nike Dri-FIT Camisa" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Nike</span>
+            <h3 class="product-card__name">Dri-FIT Training Shirt</h3>
+            <p class="product-card__desc">Camisa de entrenamiento ligera con tecnología Dri-FIT. Corte limpio y tejido transpirable.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€49</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="nike">
+          <div class="product-card__image">
+            <img src="https://pufferreds.com/cdn/shop/files/IF0734-010.png?v=1768596333&width=2000" alt="Nike Sportswear Pantalón" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Nike</span>
+            <h3 class="product-card__name">Sportswear Club Pants</h3>
+            <p class="product-card__desc">Pantalón de chándal esencial con ajuste relajado. Algodón suave y silueta minimal.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€65</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="nike">
+          <div class="product-card__image">
+            <img src="https://static.nike.com/a/images/t_web_pdp_936_v2/f_auto,u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd6ddd57-0634-4073-b5e2-e4b3911eb4af/AIR+FORCE+1+%2707+LX+VIBRAM.png" alt="Nike Air Force 1" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Nike</span>
+            <h3 class="product-card__name">Air Force 1 '07</h3>
+            <p class="product-card__desc">Zapatilla icónica de cuero. Perfil bajo, suela de goma y diseño atemporal.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€119</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+       <!-- Adidas -->
+        <article class="product-card" data-brand="adidas">
+          <div class="product-card__image">
+            <img src="https://media.finishline.com/i/finishline/JE6388_100_M1" alt="Adidas Essentials Tee" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Adidas</span>
+            <h3 class="product-card__name">Essentials 3-Stripes Tee</h3>
+            <p class="product-card__desc">Camiseta clásica con las tres bandas. Algodón suave y corte regular.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€35</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="adidas">
+          <div class="product-card__image">
+            <img src="https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/F15847s.jpg?im=Resize,width=750" alt="Adidas Firebird Track Pants" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Adidas</span>
+            <h3 class="product-card__name">Firebird Track Pants</h3>
+            <p class="product-card__desc">Pantalón de chándal con franja lateral. Ajuste cónico y look deportivo.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€70</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="adidas">
+          <div class="product-card__image">
+            <img src="https://cdn.runrepeat.com/storage/gallery/product_content/25437/adidas-samba-og-007-21225836-main.jpg" alt="Adidas Samba OG" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Adidas</span>
+            <h3 class="product-card__name">Samba OG</h3>
+            <p class="product-card__desc">Zapatilla indoor reinventada. Cuero premium y suela de goma con tacos.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€100</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Puma -->
+        <article class="product-card" data-brand="puma">
+          <div class="product-card__image">
+            <img src="https://i5.walmartimages.com/asr/39c0bb04-942a-45c0-a2a2-5cbf55311e4d.f156c086aab2595e8d11d8057dc42af9.jpeg" alt="Puma ESS Logo Tee" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Puma</span>
+            <h3 class="product-card__name">ESS Logo Tee</h3>
+            <p class="product-card__desc">Camiseta esencial con logo bordado. Tejido ligero y corte moderno.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€29</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="puma">
+          <div class="product-card__image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp4d5TjpPW81ikcwvbF_bAxJ13YL5M8W65yS3j8TquqJAtJXz3sXHdofWX&s=10" alt="Puma Iconic T7 Pants" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Puma</span>
+            <h3 class="product-card__name">Iconic T7 Track Pants</h3>
+            <p class="product-card__desc">Pantalón T7 con las rayas laterales. Ajuste relajado y estilo retro.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€55</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="puma">
+          <div class="product-card__image">
+            <img src="https://www.fayerwayer.com/resizer/bPwxi00l-iYR_9-hqg3XF22aLa0=/arc-photo-metroworldnews/arc2-prod/public/7S2Y5ARJKZECTPN77D6HSJDDSE.jpeg" alt="Puma Suede Classic" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Puma</span>
+            <h3 class="product-card__name">Suede Classic XXI</h3>
+            <p class="product-card__desc">Zapatilla de ante clásica. Silueta icónica y confort de todo el día.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€90</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Zara -->
+        <article class="product-card" data-brand="zara">
+          <div class="product-card__image">
+            <img src="https://academybrand.com/cdn/shop/files/HamptonLinenShirt-White_1e63fa88-b702-4540-ab56-a70012a3d41a.jpg?v=1754376376&width=1500&format=webp" alt="Zara Basic Linen Shirt" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Zara</span>
+            <h3 class="product-card__name">Basic Linen Shirt</h3>
+            <p class="product-card__desc">Camisa de lino ligera. Corte limpio y textura natural para el día a día.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€39</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="zara">
+          <div class="product-card__image">
+            <img src="https://img01.ztat.net/article/spp-media-p1/ab3f5e76731c448182d6e2b57bd647a0/9acc7866c01341368b600f8f41e6e44c.jpg?imwidth=762" alt="Zara Wide Leg Trousers" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Zara</span>
+            <h3 class="product-card__name">Wide Leg Trousers</h3>
+            <p class="product-card__desc">Pantalón de pierna ancha. Caída fluida y silueta contemporánea.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€45</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="zara">
+          <div class="product-card__image">
+            <img src="https://sparrods.com/cdn/shop/collections/Sparrods_Co_black_men_leather_sneakers.jpg?v=1731682998" alt="Zara Leather Sneakers" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Zara</span>
+            <h3 class="product-card__name">Leather Sneakers</h3>
+            <p class="product-card__desc">Zapatilla de piel minimal. Perfil bajo y suela blanca limpia.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€59</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Uniqlo -->
+        <article class="product-card" data-brand="uniqlo">
+          <div class="product-card__image">
+            <img src="https://datmay.net/wp-content/uploads/2024/09/ao-thun-uniqlo-vnxk-5.jpg" alt="Uniqlo AIRism Tee" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Uniqlo</span>
+            <h3 class="product-card__name">AIRism Cotton Tee</h3>
+            <p class="product-card__desc">Camiseta AIRism ultra ligera. Transpirable, anti-olores y corte esencial.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€19</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="uniqlo">
+          <div class="product-card__image">
+            <img src="https://api.fastretailing.com/ugc/v1/uq/id/SR_IMAGES/ugc_stylehint_uq_id_photo_250614_1647134_c-600-800" alt="Uniqlo Smart Ankle Pants" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Uniqlo</span>
+            <h3 class="product-card__name">Smart Ankle Pants</h3>
+            <p class="product-card__desc">Pantalón de tobillo con stretch. Silueta limpia y confort todo el día.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€39</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="uniqlo">
+          <div class="product-card__image">
+            <img src="https://www.diverge-sneakers.com/cdn/shop/files/white_premium_canvas_multi-layered_low_sneakers_frontview_999e9fa5-bf29-4d60-88c6-2d2870873497_1200x.jpg?v=1747151028" alt="Uniqlo Canvas Sneakers" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">Uniqlo</span>
+            <h3 class="product-card__name">Canvas Sneakers</h3>
+            <p class="product-card__desc">Zapatilla de lona simple. Diseño sin logos y suela de goma flexible.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€29</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- H&M -->
+        <article class="product-card" data-brand="hm">
+          <div class="product-card__image">
+            <img src="https://www.intimissimi.com/dw/image/v2/BHHR_PRD/on/demandware.static/-/Sites-INT_EC_COM/default/dwfdb31317/images/CMU12R001-M.jpg?sw=600&sfrm=jpeg" alt="H&M Regular Fit Tee" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">H&amp;M</span>
+            <h3 class="product-card__name">Regular Fit Tee</h3>
+            <p class="product-card__desc">Camiseta de algodón regular fit. Básico versátil para cualquier look.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€12</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="hm">
+          <div class="product-card__image">
+            <img src="https://www.esprit.com.co/cdn/shop/files/34_335G301_CAF161211_3.jpg?v=1784314071&width=1500" alt="H&M Slim Fit Chinos" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">H&amp;M</span>
+            <h3 class="product-card__name">Slim Fit Chinos</h3>
+            <p class="product-card__desc">Chino slim con stretch. Corte moderno y tejido resistente.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€29</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-brand="hm">
+          <div class="product-card__image">
+            <img src="https://www.fashionbeans.com/wp-content/uploads/2018/03/minimaltrainers-img-3-380x300.jpg" alt="H&M Trainers" />
+          </div>
+          <div class="product-card__body">
+            <span class="product-card__brand">H&amp;M</span>
+            <h3 class="product-card__name">Minimal Trainers</h3>
+            <p class="product-card__desc">Zapatilla deportiva minimal. Suela ligera y diseño limpio.</p>
+            <div class="product-card__footer">
+              <span class="product-card__price">€39</span>
+              <button type="button" class="product-card__btn">Añadir</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

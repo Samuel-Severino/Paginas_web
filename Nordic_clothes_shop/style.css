@@ -1,0 +1,641 @@
+/* =========================
+   Nørdic — Minimal Clothes Shop
+   Palette
+========================= */
+:root {
+  --silver: #ADADAD;
+  --gunmetal: #454545;
+  --yale-blue: #304663;
+  --white: #ffffff;
+  --black: #0b1220;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--gunmetal);
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+/* =========================
+   Floating Nav (top center)
+========================= */
+.floating-nav {
+  position: fixed;
+  top: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: auto;
+}
+
+/* Adapted from Uiverse.io by lawson_5090 */
+.cc-ios-tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.cc-ios-tabs__input {
+  display: none;
+}
+
+.cc-ios-tabs__control {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 200px;
+  padding: 5px;
+  border-radius: 999px;
+  background: rgba(173, 173, 173, 0.18);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 4px 24px rgba(11, 18, 32, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.cc-ios-tabs__thumb {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: calc(50% - 4px);
+  height: calc(100% - 10px);
+  border-radius: 999px;
+  background: var(--yale-blue);
+  box-shadow:
+    0 1px 3px rgba(15, 23, 42, 0.25),
+    0 8px 20px rgba(48, 70, 99, 0.35);
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.cc-ios-tabs__item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  transition: color 260ms ease;
+}
+
+.cc-ios-tabs__item:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Thumb positions — 2 tabs */
+#cc-tab-home:checked ~ .cc-ios-tabs__control .cc-ios-tabs__thumb {
+  transform: translateX(0%);
+}
+#cc-tab-shop:checked ~ .cc-ios-tabs__control .cc-ios-tabs__thumb {
+  transform: translateX(100%);
+}
+
+/* Active label color */
+#cc-tab-home:checked ~ .cc-ios-tabs__control label[for="cc-tab-home"],
+#cc-tab-shop:checked ~ .cc-ios-tabs__control label[for="cc-tab-shop"] {
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cc-ios-tabs__thumb,
+  .cc-ios-tabs__item {
+    transition: none;
+  }
+}
+
+/* =========================
+   Hero / Home
+========================= */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1627061560899-1c36a3d1657e?q=80&w=1277&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 400ms ease, visibility 400ms ease;
+}
+
+.hero.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(48, 70, 99, 0.35) 0%,
+    rgba(69, 69, 69, 0.45) 50%,
+    rgba(11, 18, 32, 0.55) 100%
+  );
+  pointer-events: none;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+  max-width: 560px;
+}
+
+.hero__title {
+  font-size: clamp(4.5rem, 12vw, 8.5rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--white);
+  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.35);
+  margin-bottom: 1rem;
+  user-select: none;
+}
+
+.hero__subtitle {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--silver);
+  opacity: 0.9;
+  margin-bottom: 1.75rem;
+}
+
+.hero__description {
+  font-size: clamp(0.95rem, 2.1vw, 1.05rem);
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Shop
+========================= */
+.shop {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1723612443010-baa8f6649232?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 400ms ease, visibility 400ms ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.shop.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.shop[hidden] {
+  display: none;
+}
+
+.shop.is-active[hidden] {
+  display: flex;
+}
+
+.shop__overlay {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(48, 70, 99, 0.4) 0%,
+    rgba(69, 69, 69, 0.5) 50%,
+    rgba(11, 18, 32, 0.6) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.shop__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 100px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.shop__title {
+  font-size: clamp(4rem, 11vw, 7.5rem);
+  font-weight: 300;
+  letter-spacing: 0.12em;
+  line-height: 0.95;
+  color: var(--white);
+  text-shadow: 0 4px 40px rgba(0, 0, 0, 0.35);
+  user-select: none;
+}
+
+/* =========================
+   Input — From Uiverse.io by dovatgabriel (adapted)
+========================= */
+.group {
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 240px;
+  border: none;
+  border-bottom: 1px solid rgba(173, 173, 173, 0.55);
+  background: transparent;
+  color: var(--white);
+  font-family: Inter, Arial, sans-serif;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.group label {
+  color: var(--silver);
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  top: -18px;
+  font-size: 13px;
+  color: var(--silver);
+  letter-spacing: 0.06em;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 240px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--yale-blue);
+  transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: var(--yale-blue);
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+/* =========================
+   Brands nav (below search)
+   Different style from top nav
+========================= */
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 0.25rem;
+  max-width: 100%;
+}
+
+.brands__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--silver);
+  opacity: 0.85;
+}
+
+.brands-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px;
+  max-width: min(520px, 92vw);
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(173, 173, 173, 0.28);
+}
+
+.brands-nav__item {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    color 200ms ease,
+    background 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.brands-nav__item:hover {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.brands-nav__item.is-active {
+  color: var(--white);
+  background: var(--yale-blue);
+  box-shadow: 0 2px 10px rgba(48, 70, 99, 0.4);
+}
+
+/* =========================
+   Product cards (minimal)
+========================= */
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 960px;
+  margin-top: 0.5rem;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(11, 18, 32, 0.55);
+  border: 1px solid rgba(173, 173, 173, 0.22);
+  box-shadow:
+    0 4px 24px rgba(11, 18, 32, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 320ms ease,
+    border-color 320ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(173, 173, 173, 0.4);
+  box-shadow:
+    0 12px 36px rgba(11, 18, 32, 0.45),
+    0 0 0 1px rgba(48, 70, 99, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.product-card__image {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: rgba(48, 70, 99, 0.25);
+}
+
+.product-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 480ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.product-card:hover .product-card__image img {
+  transform: scale(1.04);
+}
+
+.product-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 18px 16px 16px;
+  text-align: left;
+}
+
+.product-card__brand {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--silver);
+  opacity: 0.9;
+}
+
+.product-card__name {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  line-height: 1.25;
+}
+
+.product-card__desc {
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.62);
+  margin-top: 2px;
+}
+
+.product-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(173, 173, 173, 0.18);
+}
+
+.product-card__price {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+
+.product-card__btn {
+  appearance: none;
+  border: none;
+  background: var(--yale-blue);
+  color: var(--white);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(48, 70, 99, 0.4);
+  transition:
+    background 200ms ease,
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.product-card__btn:hover {
+  background: #3a5878;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(48, 70, 99, 0.5);
+}
+
+.product-card__btn:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-nav {
+    top: 18px;
+  }
+
+  .cc-ios-tabs__control {
+    width: 180px;
+  }
+
+  .cc-ios-tabs__item {
+    font-size: 12px;
+    height: 36px;
+  }
+
+  .hero__title {
+    font-size: clamp(3.8rem, 18vw, 5.5rem);
+  }
+
+  .hero__description {
+    font-size: 0.95rem;
+  }
+
+  .shop__title {
+    font-size: clamp(3.2rem, 16vw, 5rem);
+  }
+
+  .shop__content {
+    padding: 88px 16px 48px;
+    gap: 2rem;
+  }
+
+  .input,
+  .bar {
+    width: 200px;
+  }
+
+  .brands-nav {
+    gap: 6px;
+    padding: 5px;
+  }
+
+  .brands-nav__item {
+    font-size: 11px;
+    padding: 7px 11px;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    max-width: 320px;
+  }
+
+  .product-card__body {
+    padding: 14px 14px 14px;
+  }
+}
