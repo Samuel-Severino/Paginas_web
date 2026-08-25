@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+  />
+    <title>AeroNova Airlines — Viaja más allá del horizonte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;4
+  00;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#inicio" class="logo">
+          <span class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8
+  4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2
+  2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+          </span>
+          <span class="logo-text">AeroNova</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#servicios">Servicios</a>
+          <a href="#flota">Flota</a>
+          <a href="#destinos">Destinos</a>
+          <a href="#novamiles">NovaMiles</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir
+  menú">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+  stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6"
+  x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3"
+  y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+  height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle
+  cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Desde 2005 conectando el mundo
+          </span>
+          <h1>Viaja más allá <br /><span class="accent">del
+  horizonte</span></h1>
+          <p>Vuela a más de 120 ciudades en 45 países con la comodidad,
+  seguridad y elegancia que mereces.</p>
+          <div class="hero-actions">
+            <a href="#destinos" class="btn btn-primary">Explorar
+  destinos</a>
+            <a href="#servicios" class="btn btn-ghost">Conocer
+  servicios</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong>120</strong><span>Ciudades</span></div>
+            <div><strong>45</strong><span>Países</span></div>
+            <div><strong>18M</strong><span>Pasajeros/año</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="dot"></span><span class="dot"></span><span
+  class="dot"></span>
+            <span class="flight-code">AN · 204</span>
+          </div>
+          <div class="route">
+            <div>
+              <span class="iata">MAD</span>
+              <span class="city">Madrid</span>
+              <span class="time">08:30</span>
+            </div>
+            <div class="plane">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28"
+  height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8
+  6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3
+  1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </div>
+            <div>
+              <span class="iata">JFK</span>
+              <span class="city">Nueva York</span>
+              <span class="time">14:15</span>
+            </div>
+          </div>
+          <div class="hero-card-foot">
+            <span>Duración · 7h 45m</span>
+            <span class="status">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12"
+  height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="3" stroke-linecap="round"
+  stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              A tiempo
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section section-image">
+      <div class="section-bg"></div>
+      <div class="section-overlay"></div>
+
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Servicios</span>
+          <h2>Una experiencia a medida</h2>
+          <p>Cuatro clases diseñadas para que cada viaje sea único.</p>
+        </div>
+        <div class="grid grid-4">
+          <article class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26"
+  height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round"
+  stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17
+  14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12
+  2"/></svg>
+            </div>
+            <h3>Nova Suite</h3>
+            <p>Primera clase con suite privada, cama reclinable y chef a
+  bordo.</p>
+            <ul class="features">
+              <li>Suite privada</li>
+              <li>Equipaje 3×32 kg</li>
+              <li>Nova Lounge</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26"
+  height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M6 3h12l4 6-10 13L2 9z"/><path d="m12 22 4-13-3-6"/><path d="M12 22
+  8 9l3-6"/></svg>
+            </div>
+            <h3>Nova Premium</h3>
+            <p>Clase business con asiento lie-flat y menú degustación de
+  4 tiempos.</p>
+            <ul class="features">
+              <li>Asiento cama</li>
+              <li>Wi-Fi alta velocidad</li>
+              <li>Equipaje 2×32 kg</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26"
+  height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M7 13v8a2 2 0 0 0 4 0v-3"/><path d="M17 13V5a2 2 0 0 0-4 0v8"/><path
+  d="M7 13h10v3a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/><path d="M7 13V9a2 2 0
+  0 1 2-2h6a2 2 0 0 1 2 2v4"/></svg>
+            </div>
+            <h3>Nova Plus</h3>
+            <p>Turista premium con mayor espacio y servicio mejorado.</p>
+            <ul class="features">
+              <li>38" pitch</li>
+              <li>Pantalla HD 13"</li>
+              <li>Equipaje 2×23 kg</li>
+            </ul>
+          </article>
+          <article class="card">
+            <div class="card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26"
+  height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 11v5a2 2 0 0 0
+  2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"/><path d="M5
+  18v2"/><path d="M19 18v2"/></svg>
+            </div>
+            <h3>Nova Standard</h3>
+            <p>Clase económica con todas las comodidades esenciales.</p>
+            <ul class="features">
+              <li>Asiento ergonómico</li>
+              <li>100+ películas</li>
+              <li>Equipaje 1×23 kg</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOTA -->
+    <section id="flota" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Flota</span>
+          <h2>Aeronaves de última generación</h2>
+          <p>85 aviones modernos, eficientes y silenciosos.</p>
+        </div>
+        <div class="grid grid-5">
+          <div class="fleet-card">
+            <div class="fleet-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8
+  4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2
+  2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </div>
+            <h4>Airbus A350-900</h4>
+            <span class="count">12 unidades</span>
+            <p>Larga distancia</p>
+          </div>
+          <div class="fleet-card">
+            <div class="fleet-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M2 22 16 8"/><path d="M3.47 12.53 5 11l1.53 1.53a3.5 3.5 0 0 1 0
+  4.94L5 19l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/><path d="M7.47 8.53 9
+  7l1.53 1.53a3.5 3.5 0 0 1 0 4.94L9 14l-1.53-1.53a3.5 3.5 0 0 1
+  0-4.94Z"/><path d="M11.47 4.53 13 3l1.53 1.53a3.5 3.5 0 0 1 0 4.94L13
+  10l-1.53-1.53a3.5 3.5 0 0 1 0-4.94Z"/></svg>
+            </div>
+            <h4>Boeing 787-9</h4>
+            <span class="count">15 unidades</span>
+            <p>Media y larga distancia</p>
+          </div>
+          <div class="fleet-card">
+            <div class="fleet-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8
+  4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2
+  2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </div>
+            <h4>Airbus A321neo</h4>
+            <span class="count">25 unidades</span>
+            <p>Rutas europeas</p>
+          </div>
+          <div class="fleet-card">
+            <div class="fleet-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M2 22h20"/><path d="M6.36 17.4 4 22"/><path d="m20
+  22-2.36-4.6"/><path d="M11 6V2"/><path d="M11 13H8.5c-2.5
+  0-4.5-2-4.5-4.5S6 4 8.5 4H11"/><path d="M11 13h2.5c2.5 0 4.5 2 4.5
+  4.5S16 22 13.5 22H11"/></svg>
+            </div>
+            <h4>Airbus A320neo</h4>
+            <span class="count">28 unidades</span>
+            <p>Corta y media distancia</p>
+          </div>
+          <div class="fleet-card">
+            <div class="fleet-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round"
+  stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93
+  4.93 4.24 4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="M14.83
+  9.17l4.24-4.24"/><path d="m4.93 19.07 4.24-4.24"/></svg>
+            </div>
+            <h4>Embraer E195</h4>
+            <span class="count">5 unidades</span>
+            <p>Regional</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINOS -->
+    <section id="destinos" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Destinos</span>
+          <h2>Una red global a tu alcance</h2>
+          <p>Más de 120 ciudades en los cinco continentes.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="dest-card">
+            <div class="dest-head">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20"
+  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12"
+  cy="10" r="3"/></svg>
+              <h4>Europa</h4>
+            </div>
+            <ul>
+              <li>Madrid · Barcelona</li>
+              <li>París · Lyon</li>
+              <li>Berlín · Múnich</li>
+              <li>Roma · Milán</li>
+              <li>Londres · Ámsterdam</li>
+              <li>Lisboa</li>
+            </ul>
+          </div>
+          <div class="dest-card">
+            <div class="dest-head">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20"
+  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12"
+  cy="10" r="3"/></svg>
+              <h4>América</h4>
+            </div>
+            <ul>
+              <li>Ciudad de México · Cancún</li>
+              <li>Buenos Aires · Bariloche</li>
+              <li>Bogotá · Cartagena</li>
+              <li>Nueva York · Miami</li>
+              <li>Santiago · São Paulo</li>
+            </ul>
+          </div>
+          <div class="dest-card">
+            <div class="dest-head">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20"
+  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12"
+  cy="10" r="3"/></svg>
+              <h4>Asia</h4>
+            </div>
+            <ul>
+              <li>Tokio</li>
+              <li>Dubái</li>
+              <li>Seúl</li>
+              <li>Bangkok</li>
+              <li>Singapur</li>
+            </ul>
+          </div>
+          <div class="dest-card">
+            <div class="dest-head">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20"
+  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12"
+  cy="10" r="3"/></svg>
+              <h4>África · Oceanía</h4>
+            </div>
+            <ul>
+              <li>Marrakech</li>
+              <li>El Cairo</li>
+              <li>Ciudad del Cabo</li>
+              <li>Sídney</li>
+              <li>Auckland</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOVAMILES -->
+    <section id="novamiles" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Programa de fidelidad</span>
+          <h2>NovaMiles</h2>
+          <p>Sube de nivel y desbloquea beneficios exclusivos.</p>
+        </div>
+        <div class="grid grid-5 tiers">
+          <div class="tier tier-bronze">
+            <span class="tier-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round"
+  stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477
+  12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <h4>Inicial</h4>
+            <p>Registro gratuito</p>
+          </div>
+          <div class="tier tier-silver">
+            <span class="tier-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round"
+  stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477
+  12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <h4>Plata</h4>
+            <p>25.000 millas</p>
+            <span class="tier-perk">Check-in prioritario</span>
+          </div>
+          <div class="tier tier-gold">
+            <span class="tier-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round"
+  stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477
+  12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </span>
+            <h4>Oro</h4>
+            <p>50.000 millas</p>
+            <span class="tier-perk">Upgrade y lounge</span>
+          </div>
+          <div class="tier tier-platinum">
+            <span class="tier-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M6 3h12l4 6-10 13L2 9z"/><path d="m12 22 4-13-3-6"/><path d="M12 22
+  8 9l3-6"/></svg>
+            </span>
+            <h4>Platino</h4>
+            <p>100.000 millas</p>
+            <span class="tier-perk">Plus gratuito</span>
+          </div>
+          <div class="tier tier-diamond">
+            <span class="tier-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32"
+  height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zM5 22h14"/></svg>
+            </span>
+            <h4>Diamante</h4>
+            <p>Por invitación</p>
+            <span class="tier-perk">Servicios exclusivos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPROMISO -->
+    <section class="section commitment">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Sostenibilidad</span>
+          <h2>Comprometidos con el planeta</h2>
+          <p>Reducimos emisiones y construimos un futuro más limpio.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="metric">
+            <div class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22"
+  height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M3 22h12"/><path d="M5 22V8a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v14"/><path
+  d="M9 14h2"/></svg>
+            </div>
+            <span>30%</span>
+            <p>Menos emisiones con flota moderna</p>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22"
+  height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M7 19H4.815a1.83 1.83 0 0 1-1.57-.881 1.785 1.785 0 0
+  1-.004-1.784L7.196 9.5"/><path d="M11 19h8.203a1.83 1.83 0 0 0
+  1.556-.89 1.784 1.784 0 0 0 0-1.775l-1.226-2.12"/><path d="m14 16-3 3 3
+  3"/><path d="M8.293 13.596 7.196 9.5 3.1 10.598"/><path d="m9.344
+  5.811 1.093-1.892A1.83 1.83 0 0 1 11.985 3a1.784 1.784 0 0 1
+  1.546.888l3.943 6.843"/><path d="m13.378 9.633 4.096 1.098
+  1.097-3.945"/></svg>
+            </div>
+            <span>0</span>
+            <p>Plásticos de un solo uso a bordo</p>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22"
+  height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M12 2v8"/><path d="m4.93 10.93 1.41 1.41"/><path d="M2 18h2"/><path
+  d="M20 18h2"/><path d="m19.07 10.93-1.41 1.41"/><path d="M22
+  22H2"/><path d="m8 22 4-10 4 10"/></svg>
+            </div>
+            <span>SAF</span>
+            <p>Combustible sostenible</p>
+          </div>
+          <div class="metric">
+            <div class="metric-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22"
+  height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle
+  cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12"
+  cy="12" r="2"/></svg>
+            </div>
+            <span>2050</span>
+            <p>Meta carbono neto cero</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Contacto</span>
+          <h2>Estamos para ayudarte</h2>
+          <p>Nuestro equipo disponible 24/7.</p>
+        </div>
+        <div class="grid grid-4 contact-grid">
+          <div class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24"
+  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle
+  cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path
+  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10
+  15.3 15.3 0 0 1 4-10z"/></svg>
+            </span>
+            <h4>Web</h4>
+            <p>www.aeronova-airlines.com</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24"
+  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect
+  x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18"
+  x2="12.01" y2="18"/></svg>
+            </span>
+            <h4>App</h4>
+            <p>iOS · Android</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24"
+  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0
+  0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2
+  1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0
+  6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22
+  16.92z"/></svg>
+            </span>
+            <h4>Teléfono</h4>
+            <p>+34 900 123 456</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24"
+  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1
+  0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <h4>Email</h4>
+            <p>atencion@aeronova-airlines.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+  height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8
+  4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2
+  2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+          </span>
+          <span>AeroNova Airlines</span>
+        </div>
+        <p>© 2026 AeroNova Airlines. Todos los derechos reservados.</p>
+        <div class="social">
+          <a href="#" aria-label="Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3
+  15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2
+  3-1.2z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect
+  x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4
+  4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5"
+  x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+  height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path
+  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1
+  6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4"
+  r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
