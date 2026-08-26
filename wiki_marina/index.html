@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wiki informativa sobre la vida marina: ecosistemas, especies,
+  biodiversidad y consejos para su conservación." />
+    <title>Vida Marina · Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+D
+  isplay:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#hero" class="logo">
+          <span class="logo-mark">~</span>
+          <span class="logo-text">Vida Marina</span>
+        </a>
+        <nav class="nav-links" id="navLinks">
+          <a href="#introduccion">Introducción</a>
+          <a href="#especies">Especies</a>
+          <a href="#ecosistemas">Ecosistemas</a>
+          <a href="#tips">Tips</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Wiki · Biodiversidad oceánica</p>
+        <h1 class="hero-title">Vida Marina</h1>
+        <p class="hero-subtitle">
+          Un recorrido por los ecosistemas que cubren más del 70% de nuestro planeta
+          y por las especies que los habitan.
+        </p>
+        <div class="hero-actions">
+          <a href="#introduccion" class="btn btn-primary">Comenzar</a>
+          <a href="#tips" class="btn btn-ghost">Ver consejos</a>
+        </div>
+      </div>
+      <a href="#introduccion" class="hero-scroll" aria-label="Bajar">
+        <span></span>
+      </a>
+    </section>
+
+    <main>
+
+      <!-- INTRODUCCIÓN: Fondo completo con contenido superpuesto -->
+      <section class="section intro-section" id="introduccion">
+        <div class="intro-layout">
+          <!-- Contenedor de contenido centralizado sobre el fondo -->
+          <div class="intro-content">
+            <header class="section-head section-head-left">
+              <span class="section-tag">01 · Introducción</span>
+              <h2>El océano, origen de la vida</h2>
+              <p>
+                Los océanos albergan cerca del 80% de toda la vida del planeta.
+                Desde arrecifes de coral hasta las fosas abisales, cada capa de
+                agua contiene comunidades únicas que regulan el clima, producen
+                oxígeno y sostienen a millones de personas.
+              </p>
+            </header>
+      
+            <div class="intro-cards">
+              <div class="card">
+                <p class="card-title">Cobertura</p>
+                <p class="small-desc">
+                  Los océanos cubren aproximadamente 361 millones de km², casi
+                  tres veces la superficie terrestre. Un dominio vasto y profundo
+                  que conecta todos los continentes.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <p class="card-title">Oxígeno</p>
+                <p class="small-desc">
+                  El fitoplancton marino genera entre el 50% y el 80% del oxígeno
+                  que respiramos. Sin él, la atmósfera que conocemos no sería posible.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <p class="card-title">Biodiversidad</p>
+                <p class="small-desc">
+                  Se han descrito más de 250.000 especies marinas y se estima que
+                  podrían existir millones más, gran parte aún por descubrir en las
+                  profundidades.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <p class="card-title">Regulación climática</p>
+                <p class="small-desc">
+                  Los océanos absorben cerca del 25% del CO₂ emitido por la actividad
+                  humana, amortiguando el cambio climático a escala global.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+      
+              <div class="card">
+                <p class="card-title">Alimento y vida</p>
+                <p class="small-desc">
+                  Más de 3.000 millones de personas dependen de la biodiversidad
+                  marina como fuente de alimento y sustento económico.
+                </p>
+                <div class="go-corner">
+                  <div class="go-arrow">→</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ESPECIES -->
+      <section class="section especies-section" id="especies">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-tag">02 · Especies</span>
+            <h2>Grandes grupos de vida marina</h2>
+            <p>Una clasificación general que ayuda a entender la diversidad del océano.</p>
+          </header>
+      
+          <div class="especies-grid">
+            <div class="species-card">
+              <img class="species-card__img" src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mamíferos marinos" />
+              <div class="species-card__content">
+                <p class="species-card__title">Mamíferos marinos</p>
+                <p class="species-card__description">
+                  Ballenas, delfines, focas y manatíes. Sangre caliente, crías vivas y migraciones de miles de kilómetros. Ballena azul, delfín nariz de botella y foca monje del Mediterráneo.
+                </p>
+              </div>
+            </div>
+      
+            <div class="species-card">
+              <img class="species-card__img" src="https://images.unsplash.com/photo-1619491202102-088c4afb271c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Peces" />
+              <div class="species-card__content">
+                <p class="species-card__title">Peces</p>
+                <p class="species-card__description">
+                  El grupo más diverso del océano: desde gobios hasta tiburones ballena. Pez payaso, tiburón blanco y pez linterna bioluminiscente.
+                </p>
+              </div>
+            </div>
+      
+            <div class="species-card">
+              <img class="species-card__img" src="https://images.unsplash.com/photo-1628944681206-2ee8d63b0a6b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Invertebrados" />
+              <div class="species-card__content">
+                <p class="species-card__title">Invertebrados</p>
+                <p class="species-card__description">
+                  Medusas, pulpos, corales y crustáceos forman el 95% de las especies marinas. Pulpo común, coral cerebro y medusa luna.
+                </p>
+              </div>
+            </div>
+      
+            <div class="species-card">
+              <img class="species-card__img" src="https://images.unsplash.com/photo-1596024463892-f5677f28e6d3?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plantas y algas" />
+              <div class="species-card__content">
+                <p class="species-card__title">Plantas y algas</p>
+                <p class="species-card__description">
+                  Productores primarios del océano. Kelp gigante, posidonia oceánica y fitoplancton: base de la cadena alimentaria y del clima.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ECOSISTEMAS -->
+      <section class="section ecosistemas-section" id="ecosistemas">
+        <div class="container">
+          <header class="section-head">
+            <span class="section-tag">03 · Ecosistemas</span>
+            <h2>Hábitats del océano</h2>
+            <p>Cada ecosistema tiene condiciones únicas de luz, presión y temperatura.</p>
+          </header>
+      
+          <div class="ecosystems">
+            <div class="ecosystem">
+              <h4>Arrecifes de coral</h4>
+              <p>Conocidos como las selvas del mar. Albergan cerca del 25% de la vida marina aunque ocupan menos del 1% del fondo oceánico.</p>
+            </div>
+            <div class="ecosystem">
+              <h4>Manglares</h4>
+              <p>Bosques costeros que sirven de criadero para peces, protegen la línea costera y almacenan grandes cantidades de carbono.</p>
+            </div>
+            <div class="ecosystem">
+              <h4>Praderas marinas</h4>
+              <p>Pastos submarinos que oxigenan el agua, estabilizan el sedimento y alimentan a tortugas, dugongos y peces.</p>
+            </div>
+            <div class="ecosystem">
+              <h4>Fondos abisales</h4>
+              <p>Más allá de los 4.000 m, sin luz solar. La vida depende de fuentes hidrotermales y de la nieve marina (materia orgánica que cae).</p>
+            </div>
+            <div class="ecosystem">
+              <h4>Zona pelágica</h4>
+              <p>Aguas abiertas donde nadan atunes, tiburones, ballenas y multitudes de peces pelágicos.</p>
+            </div>
+            <div class="ecosystem">
+              <h4>Estuarios</h4>
+              <p>Donde el río se encuentra con el mar. Aguas salobres de alta productividad y enorme importancia ecológica.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TIPS -->
+      <section class="section tips-section" id="tips">
+        <div class="tips-layout">
+          <div class="tips-content">
+            <header class="section-head section-head-left">
+              <span class="section-tag">04 · Tips</span>
+              <h2>Pequeños gestos, gran impacto</h2>
+              <p>Acciones cotidianas para reducir tu huella sobre el océano.</p>
+            </header>
+      
+            <div class="tips">
+              <div class="tip">
+                <span class="tip-number">01</span>
+                <div>
+                  <h4>Reduce el plástico de un solo uso</h4>
+                  <p>Cada año llegan al océano unos 11 millones de toneladas de plástico. Lleva tu propia botella, bolsa y cubiertos.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <span class="tip-number">02</span>
+                <div>
+                  <h4>Elige pescado sostenible</h4>
+                  <p>Consulta guías como MSC o WWF-SASS para saber qué especies están sobreexplotadas y evita el consumo de juveniles.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <span class="tip-number">03</span>
+                <div>
+                  <h4>Cuida la energía</h4>
+                  <p>El cambio climático acidifica y calienta los océanos. Apagar luces, usar transporte público y mejorar el aislamiento también ayuda al mar.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <span class="tip-number">04</span>
+                <div>
+                  <h4>Productos respetuosos</h4>
+                  <p>Evita cosméticos con microperlas y elige protectores solares sin oxibenzona ni octinoxato, dañinos para los corales.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <span class="tip-number">05</span>
+                <div>
+                  <h4>Respeta la fauna</h4>
+                  <p>No toques, alimentes ni te acerques a animales marinos al bucear. Mantén distancia y nunca los saques de su hábitat.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <span class="tip-number">06</span>
+                <div>
+                  <h4>Apoya la limpieza</h4>
+                  <p>Participa en jornadas de limpieza de playas o ríos. Cualquier corriente termina en el mar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tips-image" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq-section" id="faq">
+        <div class="faq-layout">
+          <div class="faq-image" aria-hidden="true"></div>
+          <div class="faq-content">
+            <header class="section-head section-head-left">
+              <span class="section-tag">05 · FAQ</span>
+              <h2>Preguntas frecuentes</h2>
+            </header>
+      
+            <div class="faq">
+              <details class="faq-item" open>
+                <summary>¿Por qué son importantes los océanos?</summary>
+                <p>
+                  Producen gran parte del oxígeno que respiramos, absorben cerca del 25% del CO₂
+                  que emitimos, regulan el clima y son fuente de alimento y trabajo para unos
+                  3.000 millones de personas.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>¿Cuántas especies marinas existen?</summary>
+                <p>
+                  Se han descrito más de 250.000, pero se estima que el número real podría superar
+                  el millón, incluyendo muchas que aún no conocemos, sobre todo en aguas profundas.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>¿Qué amenazas principales enfrentan?</summary>
+                <p>
+                  Cambio climático, contaminación por plásticos y productos químicos, pesca
+                  excesiva, destrucción de hábitats como manglares y arrecifes, y especies invasoras.
+                </p>
+              </details>
+              <details class="faq-item">
+                <summary>¿Qué puedo hacer yo desde mi casa?</summary>
+                <p>
+                  Reducir el consumo de plástico, ahorrar energía, elegir productos locales y
+                  sostenibles, informarte y compartir información verificada sobre la conservación.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <h4>Vida Marina</h4>
+          <p>Una wiki educativa sobre los ecosistemas y especies del océano.</p>
+        </div>
+        <div>
+          <h5>Recursos</h5>
+          <ul>
+            <li>ONU · Decenio de los Océanos</li>
+            <li>WWF · Biodiversidad marina</li>
+            <li>National Geographic</li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contacto</h5>
+          <ul>
+            <li>info@vidamarina.wiki</li>
+            <li>+00 000 000 000</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Vida Marina · Hecho con respeto por el océano.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
